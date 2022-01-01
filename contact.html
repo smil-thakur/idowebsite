@@ -129,7 +129,7 @@ Author URL: http://w3layouts.com
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="col-md-7 mt-md-0 mt-4">
                         <div class="map-iframe">
                             <iframe
@@ -137,11 +137,11 @@ Author URL: http://w3layouts.com
                                 width="100%" height="312" frameborder="0" allowfullscreen=""></iframe>
                         </div>
                     </div>
-                   
+
                 </div>
                 <section id="contactform"></section>
-                
-                
+
+
                 <!-- contact form -->
                 <div class="contact-form-sec pt-5 mt-md-5">
                     <div class="title-heading-w3 text-center mx-auto mb-5 pb-sm-4">
@@ -152,7 +152,8 @@ Author URL: http://w3layouts.com
                             <img src="./images/chatbot.png" alt="" class="img-fluid img-responsive">
                         </div>
                         <div class="col-md-7 contact-right mt-md-0 mt-4 pl-lg-4">
-                            <form action="https://sendmail.w3layouts.com/submitForm" method="post" class="signin-form">
+                            <form action="https://formsubmit.co/info@idoleadinginnovations.com" method="post"
+                                class="signin-form">
                                 <div class="input-grids">
                                     <input type="text" name="Name" id="w3lName" placeholder="Your Name*"
                                         class="contact-input" />
@@ -170,10 +171,10 @@ Author URL: http://w3layouts.com
                         </div>
                     </div>
                 </div>
-            </section>
-                <!-- //contact form -->
-            </div>
-        </div>
+    </section>
+    <!-- //contact form -->
+    </div>
+    </div>
     </section>
     <!-- //contact page -->
 
@@ -182,7 +183,7 @@ Author URL: http://w3layouts.com
         <div class="footer-sub">
             <div class="container">
                 <div class="text-txt">
-                    
+
                     <div class="row sub-columns">
                         <div class="col-lg-3 col-sm-6 sub-two-right">
                             <h6>Quick links</h6>
@@ -220,7 +221,7 @@ Author URL: http://w3layouts.com
                                 to society through excellence in
                                 automation.
                             </p>
-                           
+
                         </div>
                     </div>
                 </div>
@@ -272,37 +273,7 @@ Author URL: http://w3layouts.com
     <!-- theme switch js (light and dark)-->
     <script src="assets/js/theme-change.js"></script>
     <script>
-        function handleSubmit(event) {
-            event.preventDefault();
-            let formData = new FormData(event.target);
-            html = ""
-            email = 'ido.leadinginnovations@gmail.com'
-            subject = "From iDO - Contact Page"
-            for (let [name, value] of formData) {
-                html += `<tr><td><b> ${name} </b></td> : <td> ${value} </td> <br><tr>`
-            }
-            var xhr = new XMLHttpRequest();
-            xhr.open("POST", 'https://nodemailer57.herokuapp.com/', true);
-            xhr.setRequestHeader('Content-Type', 'application/json');
-            xhr.onreadystatechange = function () {
-                if (this.readyState == 4 && this.status == 200) {
 
-                }
-
-                if (this.status != 200) {
-
-                }
-            }
-            xhr.send(JSON.stringify({
-                email,
-                subject,
-                html
-            }));
-            form.reset()
-            alert("We will reach out to you soon");
-        }
-        const form = document.querySelector('form');
-        form.addEventListener('submit', handleSubmit);
 
         function autoType(elementClass, typingSpeed) {
             var thhis = $(elementClass);
